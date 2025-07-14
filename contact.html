@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dentist & Dental Clinic</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+
+  <!-- Link Swiper's CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+</head>
+
+<body>
+
+  <header class="header">
+    <!-- top bar nav
+           <! Top Contact Bar -->
+    <!-- <div class="top-bar">
+    <div class="left">
+      <i class="fa fa-phone"></i> (000) 000-0000
+      <i class="fa fa-envelope"></i> example@gmail.com
+      <i class="fa fa-map-marker-alt"></i> 2464 Royal Ln. Mesa, New Jersey 45463
+    </div>
+    <div class="right">
+      <i class="fab fa-facebook-f"></i>
+      <i class="fab fa-x-twitter"></i>
+      <i class="fab fa-pinterest"></i>
+      <i class="fab fa-instagram"></i>
+      <i class="fab fa-youtube"></i>
+    </div>
+  </div> -->
+
+    <div class="container">
+      <div class="logo">
+        <a href="/">
+          <span class="logo">Denta.</span>
+        </a>
+      </div>
+      <nav class="main-nav">
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="services.html" alt="Services" id="services">Services</a></li>
+          <li><a href="dentist.html">Dentists</a></li>
+          <li><a href="casestories.html">Case Studies</a></li>
+          <li><a href="blog.html">Blogs</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+        <button class="book-now-btn">Book Now</button>
+      </nav>
+      <div class="mobile-menu-icon">
+        <i class="fas fa-bars"></i>
+      </div>
+    </div>
+  </header>
+
+  <!-- contact section -->
+
+
+  <section class="contact-section">
+    <div class="contact-header">
+      <p>CONTACT US</p>
+      <h1><span>Get in Touch</span> with Us</h1>
+    </div>
+
+    <div class="contact-container">
+      <!-- Left: Contact Form -->
+      <form class="contact-form">
+        <div class="form-row">
+          <label for="name">Name:<input type="text" placeholder="Ex. John" required /></label>
+          <!-- <input type="text" placeholder="Ex. John" required /> -->
+          <label for="lstname">Last Name:<input type="text" placeholder="Ex. Doe" required /></label>
+          <!-- <input type="text" placeholder="Ex. Doe" required /> -->
+        </div>
+        <div class="form-row">
+          <label for="email">Email:<input type="email" placeholder="example@gmail.com" required /></label>
+          <!-- <input type="email" placeholder="example@gmail.com" required /> -->
+          <label for="phone">Phone: <input type="tel" placeholder="Enter Phone Number" required /></label>
+          <!-- <input type="tel" placeholder="Enter Phone Number" required /> -->
+        </div>
+        <label for="subject">Subject:<input type="text" placeholder="Enter subject.." required /></label>
+        <!-- <input type="text" placeholder="Enter subject.." required /> -->
+        <label for="message">Message:<textarea placeholder="Enter your message.." required></textarea></label>
+        <!-- <textarea placeholder="Enter your message.." required></textarea> -->
+        <button type="submit">Send Message</button>
+      </form>
+
+      <!-- Right: Info Box -->
+      <div class="info-box10">
+        <h3>Address</h3>
+        <p>2464 Royal Ln. Mesa, New Jersey 45463</p>
+
+        <h3>Contact</h3>
+        <p>Phone : (000) 000-0000<br>Email : example@gmail.com</p>
+
+        <h3>Clinic Hours</h3>
+        <p>
+          Monday to Friday : 09:00 - 22:00<br>
+          Saturday : 11:00 - 20:00<br>
+          Sunday : Closed
+        </p>
+
+        <h3 class="socialicon10">Stay Connected</h3>
+        <div class="social-icons10">
+          <i class="fab fa-facebook"></i>
+          <i class="fab fa-pinterest"></i>
+          <i class="fab fa-instagram"></i>
+          <i class="fab fa-youtube"></i>
+        </div>
+      </div>
+    </div>
+
+    <!-- Map -->
+    <div class="map">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d28820.021353772616!2d81.80271502649954!3d25.454885429335516!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x399acb4aee3a8527%3A0xd69614c1c5791aa2!2sDr.%20Anubhuti&#39;s%20Dental%20Home%20(CGHS%20Empanelled)!5e0!3m2!1sen!2sin!4v1752479942991!5m2!1sen!2sin"
+        allowfullscreen="" loading="lazy">
+      </iframe>
+    </div>
+
+    <!-- appontment section -->
+    <div class="main-appointment">
+      <div class="form-box">
+        <h2>Effortless Online Booking for Your Dental Visit</h2>
+        <form id="appointmentForm">
+          <div class="form-group">
+            <label for="name">Your Name</label>
+            <input type="text" placeholder="Your Name" required />
+          </div>
+          <div class="form-group">
+            <label for="phone">Phone Number</label>
+            <input type="tel" placeholder="Phone Number" required />
+          </div>
+          <div class="form-group">
+            <span>Type of Treatment</span>
+            <select required>
+              <option value="">Select</option>
+              <option>General Dentistry</option>
+              <option>Teeth Whitening</option>
+              <option>Dental Implant</option>
+              <option>Dental Sealant</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <span>Preferred Dentist</span>
+            <select required>
+              <option>Select</option>
+              <option class="opt">Dr. David Brown</option>
+              <option>Dr. Sarah Lee</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="date">Date</label>
+            <input type="date" required id="date" />
+          </div>
+
+          <div class="form-group">
+            <span>Time</span>
+            <input type="time" required />
+          </div>
+          <div class="form-group">
+            <span>Special Request Message</span>
+            <textarea class="full" rows="4" placeholder="Enter here..." required></textarea>
+          </div>
+          <button type="submit" class="btn2">Book an Appointment</button>
+        </form>
+      </div>
+
+      <div class="sidebar">
+        <p class="text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Soluta, omnis aspernatur. Suscipit,
+          reiciendis
+          delectus explicabo eaque animi repudiandae omnis.</p>
+        <div class="box">
+          <h4>Clinic Hours</h4>
+          <p><strong>Mon - Fri:</strong> 09:00 - 22:00</p>
+          <p><strong>Saturday:</strong> 11:00 - 20:00</p>
+          <p><strong>Sunday:</strong> Closed</p>
+        </div>
+        <div class="box">
+          <h4>Your Smile, Our Priority</h4>
+          <p><strong>24/7 Emergency</strong></p>
+          <p>(000) 000-0000</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- FAQ -->
+    <section class="faq-section">
+      <div class="faq-left">
+        <h4>FAQs</h4>
+        <h2><span>Dental Care FAQ:</span> Your Questions Answered</h2>
+
+        <div class="accordion">
+          <div class="accordion-item">
+            <div class="accordion-title">
+              What services do you offer?
+              <span class="icon">+</span>
+            </div>
+            <div class="accordion-content">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.
+            </div>
+          </div>
+
+          <div class="accordion-item active">
+            <div class="accordion-title">
+              Do I need to make an appointment?
+              <span class="icon">−</span>
+            </div>
+            <div class="accordion-content">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+              dolore magna aliqua.
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <div class="accordion-title">
+              Do you accept walk-in appointments?
+              <span class="icon">+</span>
+            </div>
+            <div class="accordion-content">
+              Yes, we welcome walk-in patients depending on availability.
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <div class="accordion-title">
+              Can I book an emergency dental appointment?
+              <span class="icon">+</span>
+            </div>
+            <div class="accordion-content">
+              Emergency slots are available. Please call us immediately if needed.
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <div class="accordion-title">
+              Do you offer online consultations?
+              <span class="icon">+</span>
+            </div>
+            <div class="accordion-content">
+              Yes, we offer virtual consultations for your convenience.
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="faq-right">
+        <div class="faq-box blue">
+          <i class="fas fa-comments"></i>
+          <h4>You have different questions?</h4>
+          <p>Our team will answer all your questions. We ensure a quick response.</p>
+          <a href="#" class="btn">Contact Us</a>
+        </div>
+
+        <div class="faq-box white">
+          <i class="fas fa-phone"></i>
+          <h4>24/7 Emergency</h4>
+          <p>(000) 000-0000</p>
+        </div>
+      </div>
+    </section>
+
+  </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <!-- Footer section -->
+  <!-- Newsletter Section -->
+  <section class="newsletter">
+    <p class="subtext">OUR NEWSLETTER</p>
+    <h2 class="headline">
+      Subscribe to Our Newsletter for the <br />
+      <span>Latest Updates and Offers</span>
+    </h2>
+    <form class="newsletter-form">
+      <i class="fas fa-envelope icon"></i>
+      <input type="email" placeholder="Enter Email Address" required />
+      <button type="submit">Subscribe</button>
+    </form>
+  </section>
+
+  <!-- Footer Section -->
+  <footer class="footer">
+    <div class="footer-content">
+      <!-- Column 1 -->
+      <div class="footer-col">
+        <h3 class="logo"><i class="fas fa-tooth"></i>Dentist.</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+          magna.</p>
+        <div class="social-icons2">
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-x-twitter"></i></a>
+          <a href="#"><i class="fab fa-pinterest-p"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-youtube"></i></a>
+        </div>
+      </div>
+
+      <!-- Column 2 -->
+      <div class="footer-col">
+        <h4>Company</h4>
+        <ul>
+          <li><a href="#">FAQs</a></li>
+          <li><a href="#">Our Team</a></li>
+          <li><a href="#">Contact Us</a></li>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Testimonials</a></li>
+        </ul>
+      </div>
+
+      <!-- Column 3 -->
+      <div class="footer-col">
+        <h4>Contact Info</h4>
+        <ul>
+          <li>(000) 000-0000</li>
+          <li>example@gmail.com</li>
+          <li>2464 Royal Ln. Mesa,<br> New Jersey 45463</li>
+        </ul>
+      </div>
+
+      <!-- Column 4 -->
+      <div class="footer-col">
+        <h4>Clinic Hours</h4>
+        <ul>
+          <li>Monday to Friday <span>09:00 - 22:00</span></li>
+          <li>Saturday <span>11:00 - 20:00</span></li>
+          <li>Sunday <span>Closed</span></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+  <script src="main.js" defer></script>
+</body>
+
+</html>
